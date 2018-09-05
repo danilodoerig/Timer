@@ -5,7 +5,6 @@
 class Timer{
 
   private:
-  bool is_Timer_end;
   unsigned long t;
   unsigned long previousMillis;
   unsigned long currentMillis;
