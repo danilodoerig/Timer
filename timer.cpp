@@ -5,20 +5,13 @@ Timer::Timer(unsigned long Time) {
   t = Time;
 }
 //**************************************************************
-bool Timer::get_Timerend(){ 
-  if (millis() - previousMillis >= t) {
-    return true;
-  }
-  else {
-    return false;
-  }
+bool Timer::get_Timerend() {
+  return (millis() - previousMillis >= t);
 }
 //**************************************************************
-void Timer::set_Timerstart()
-{ previousMillis = millis();
-  get_Timerend();
+void Timer::set_Timerstart(){ 
+   previousMillis = millis();
 }
-
 
 
 
