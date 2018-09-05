@@ -7,7 +7,7 @@ class Timer{
   private:
   unsigned long t;
   unsigned long previousMillis;
-  unsigned long currentMillis;
+ 
   
   
   public:
